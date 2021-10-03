@@ -10,14 +10,6 @@
     height: 100%;
 }
 
-.valera {
-    font-family: 'Varela Round', sans-serif;
-}
-
-.vietnam {
-    font-family: 'Be Vietnam', sans-serif;
-}
-
 
 /* text */
 .bigText {
@@ -31,6 +23,45 @@
 .text {
     font-size: 12px;
 }
+
+.valera {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.vietnam {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+
+/* button */
+.bigButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 329px;
+    height: 58px;
+}
+
+.mediumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 58px;
+}
+
+.smallButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 58px;
+}
+
+. {
+
+}
+
 
 
 
