@@ -1,7 +1,6 @@
 /* mobile */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&family=Varela+Round&display=swap');
 
-
 body {
     margin: 0px;
     padding:0px;
@@ -21,10 +20,6 @@ body {
     background-color: #275249;
 }
 
-.bgGreen {
-    background-color: #357266;
-}
-
 .bgLightGreen {
     background-color: #91C499;
 }
@@ -33,27 +28,19 @@ body {
     background-color: #FFA1A1;
 }
 
-/* layout */
-
-
 /* text */
 .bigText {
     font-size: 36px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .heading {
     font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .text {
     font-size: 12px;
-}
-
-.varela {
-    font-family: 'Varela Round', sans-serif;
-}
-
-.vietnam {
     font-family: 'Be Vietnam', sans-serif;
 }
 
@@ -82,72 +69,37 @@ body {
     color:black;
 }
 
-.txtWhite {
-    color: white;
-}
-
-/* UI stuff */
-.bigIcon {
-    width: 145px;
-    height: 145px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.bigIcon > img {
-    width: 80px;
-    height: 80px;
-}
-
-/* button */
-.bigButton {
+/* ui stuff */
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    color: white;
+    background-color: #357266;
+}
+
+.bigButton {
     width: 329px;
     height: 58px;
 }
 
 .mediumButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 226px;
+    width: 329px;
     height: 58px;
 }
 
 .smallButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 141px;
+    width: 329px;
     height: 58px;
 }
 
-/* border radius */
-.tutorialRadius {
+.card {
+    width: 100%;
+    height: 50%;
     border-radius: 40px 40px 0px 0px;
+    background-color: #357266;
 }
-
-.buttonRadius {
-    border-radius: 20px;
-}
-
-.progressRadius {
-    border-radius: 7px;
-}
-
-.circleRadius {
-    border-radius: 50%;
-}
-
-.greenBorder {
-    border:7px solid#275249;
-}
-
-
 
 /* imgs */
 .logo {
@@ -157,33 +109,44 @@ body {
     height: 200px;
 }
 
-.col-1, col-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-.col-2 {
-    text-align: left;
-    width: 100%;
-    height: auto;
-}
-
-.row-1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    justify-content: flex-start;
-}
-
 .dot {
     height: 15px;
     width: 15px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+}
+
+/* mobile and tablet */
+@media only screen and (min-width: 320px) and (max-width: 768px) { 
+    /* layout */
+    .col-1, col-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .col-2 {
+        text-align: left;
+        width: 100%;
+        height: auto;
+    }
+    
+    .row-1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+    
+}
+
+/* laptop and desktop */
+@media screen and (min-width: 1024px) {
+    /* add styling here later */
 }
