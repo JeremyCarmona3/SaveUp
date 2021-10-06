@@ -1,6 +1,12 @@
 /* mobile */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&family=Varela+Round&display=swap');
 
+
+body {
+    margin: 0px;
+    padding:0px;
+}
+
 .main {
     display:flex;
     flex-direction: column;
@@ -49,6 +55,10 @@
 
 .vietnam {
     font-family: 'Be Vietnam', sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* text colors */
@@ -100,8 +110,22 @@
     width: 141px;
     height: 58px;
 }
+/* border radius */
+.tutorialRadius {
+    border-radius: 40px 40px 0px 0px;
+}
 
-/* format later */
+.buttonRadius {
+    border-radius: 20px;
+}
+
+.progressRadius {
+    border-radius: 7px;
+}
+
+
+
+/* imgs */
 .logo {
     padding: 30px;
     border-radius: 50px;
