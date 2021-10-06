@@ -1,5 +1,36 @@
 /* mobile */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&family=Varela+Round&display=swap');
 
+.main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* bg colors */
+.bgDarkGreen {
+    background-color: #275249;
+}
+
+.bgGreen {
+    background-color: #357266;
+}
+
+.bgLightGreen {
+    background-color: #91C499;
+}
+
+.bgPink {
+    background-color: #FFA1A1;
+}
+
+/* layout */
+
+
+/* text */
 .bigText {
     font-size: 36px;
 }
@@ -12,4 +43,60 @@
     font-size: 12px;
 }
 
+.valera {
+    font-family: 'Varela Round', sans-serif;
+}
 
+.vietnam {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+/* text colors */
+.txtDarkGreen {
+    color:#275249;
+}
+
+.txtGreen {
+    color: #357266;
+}
+
+.txtLightGreen {
+    color: #91C499;
+}
+
+.txtPink {
+    color: #FFA1A1;
+}
+
+.txtBlack {
+    color:black;
+}
+
+.txtWhite {
+    color: white;
+}
+
+/* button */
+.bigButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 329px;
+    height: 58px;
+}
+
+.mediumButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 58px;
+}
+
+.smallButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 58px;
+}
