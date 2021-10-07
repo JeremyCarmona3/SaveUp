@@ -345,12 +345,12 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     
     .col-2 {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .cardText {
