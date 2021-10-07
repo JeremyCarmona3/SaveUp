@@ -4,6 +4,8 @@
 body {
     margin: 0px;
     padding:0px;
+    width:100%;
+    height: 100%;
 }
 
 .main {
@@ -15,6 +17,14 @@ body {
     height: 100vh;
 }
 
+.homepage {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 /* bg colors */
 .bgDarkGreen {
     background-color: #275249;
@@ -37,6 +47,12 @@ body {
 
 .heading {
     font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.sameLoginText {
+    font-size: 12px;
+    color: #878787;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -119,12 +135,13 @@ body {
 }
 
 .dot {
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
+    background-color: #91C499;
 }
 
 /* global layouts */
@@ -144,8 +161,24 @@ body {
 
 /* upper part of home page */
 
+.responsiveContainerHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* global UI */
+
+.mainGoal {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .bigIcon {
     display: flex;
     justify-content: center;
@@ -176,6 +209,21 @@ body {
 .smallIcon > img {
     width: 40px;
     height: 40px;
+}
+
+.miniIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91C499;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.miniIcon > img {
+    width: 36px;
+    height: 36px;
 }
 
 .inputStyle {
@@ -216,22 +264,80 @@ body {
     color:white;
 }
 
+.miniProgress {
+    width: 100%;
+    height: 10px;
+    border-radius: 7px;
+    background-color: #C5C5C5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    bottom:18px;
+}
+
+.miniProgress > div {
+    width: 40%;
+    height: 100%;
+    background-color: #275249;
+    border-radius: 7px;
+}
+
+
+
 .collection {
-    height: 40%;
+    height: 400px;
     width: 100%;
     background-color: #FAFAFA;
     border-radius: 40px 40px 0px 0px;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: fixed;
+    bottom: 0;
     overflow: scroll;
-    bottom: 0px;
+    border: 1px solid #A4A4A4;
 }
 
+.collectionMargin {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.collectionRow {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 85px;
+}
+
+.miniGoal {
+    width: 85px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.miniGoal > p{
+    font-size: 12px;
+    font-family: 'Be Vietnam', sans-serif;
+    position: relative;
+    bottom: 10px;
+}
+
+
+
+
+
 /* mobile and tablet */
-@media only screen and (min-width: 320px) and (max-width: 768px) { 
+@media only screen and (min-width: 320px) and (max-width: 1023px) { 
     /* layout */
     .col-1, col-2 {
         display: flex;
@@ -246,13 +352,21 @@ body {
         width: 100%;
         height: auto;
     }
+
+    .cardText {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
     
     .row-1 {
         display: flex;
         flex-direction: row;
         width: 100%;
         height: auto;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .row-2 {
@@ -303,4 +417,39 @@ body {
     .desknone {
         display:none
     }
+    .homepage {
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+
+
+    .responsiveContainerHome{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .mainGoal {
+        position:relative;
+        bottom: 50px;
+    }
+
+    .collection {
+        height: 600px;
+        width: 2500px;
+        border-radius: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+    .threeSections {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 416px;
+    }
+    
 }
