@@ -61,3 +61,8 @@ function customGoal3() {
     location.href = "customizingGoal3.html";
     console.log('viewing custom goal page three');
 }
+
+function homepage() {
+    location.href = "homepage.html";
+    console.log('viewing homepage');
+}
