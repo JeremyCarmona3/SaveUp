@@ -18,7 +18,7 @@
 
             <div class="aboutGoal">
                 <div>
-                    <p class="heading" id="progressAmntOutOf">60.00/200.00</p>
+                    <p class="heading" id="progressAmntOutOf">$ 800.00/2000.00</p>
                     <div class="line"></div>
                 </div>
                 <div class="goalIcon bigIcon"><img class="" src="../assets/shoes.svg"></div>
@@ -28,11 +28,15 @@
                 <img class="" id="piggybank" src="../assets/piggy.svg">
             </div>
 
-            <div class="progress border">
-                <progress id="progressBar" value="60" max="200"></progress><br>
+            <div class="progressBase">
+                <div>
+                    <div class="text">
+                        800$/2000$
+                    </div>
+                </div>
             </div>
 
-            <input class="inputStyle bigText" id="progressInput" value="0.00"></input>
+            <input class="inputStyle bigText" id="progressInput" placeholder="0.00"></input>
 
             <div class="flexRow">
                 <div class="smallButton heading button"  id="withdrawBtn">withdraw</div>
@@ -43,31 +47,35 @@
         
         <div class="goalRecords"> <!-- goal info and history-->
             <div class="goalInfo"> <!-- goal info -->
-                <div class="infoLabel"> 
-                    <div class="">
+                <p class="bigText">Goal Information</p>
+                <div class="infoCont heading"> 
+                    <div class="infoLabels">
                         <p class="">Final Goal</p>
                         <p class="">Weekly Goal</p>
                         <p class="">Start Date</p>
                         <p class="">End Date</p>
                     </div>
-                    <div class="">
-                        <p class="" id="">$10.00</p>
+                    <div class="infoNums">
+                        <p class="" id="">$800.00</p>
+                        <p class="" id="">$50.00</p>
                         <p class="" id="">01/01/2021</p>
-                        <p class="" id="">01/03/2021</p>
+                        <p class="" id="">01/06/2021</p>
                     </div>
                 </div>
 
-                <div class="bigButton heading button" id ="editGoalBtn">edit goal</div>
+                <div class="editBtn">
+                <div class="smallButton button heading" id ="editGoalBtn">edit goal</div>
+                </div>
             </div>
 
             <div class=""> <!-- goal history -->
-                <div class="">
+                <div class="listHistory">
                     <p class="heading">History</p>
-                    <div class="" id="">======== History =========</div>
+                    <div class="" id=""></div>
                 </div>
                 <div class="">
                     <p class="heading">Progress Graph</p>
-                    <div class="" id="">======== Line Chart of Goal Progress ========</div>
+                    <div class="chartCont"></div>
                 </div>
             </div>
         </div>
