@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize My Goal</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <script src="../javascript/index.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <p class="bigText">Add New Goal</p>
+        <div class="smallIcon">
+            <img src="../assets/shoes.svg">
+        </div>
+        <br>
+        <div class="underline text">Change icon</div>
+        <br>
+        <div class="formStyle">
+        <form>
+            <label class="heading">Goal Name</label><br>
+            <input class="inputStyle" type="text"><br><br>
+            <label class="heading">How much would you like to save for this goal?</label><br>
+            <input class="inputStyle" type="text"><br><br>
+            <label class="heading">Category</label><br>
+            <input class="inputStyle" type="text"><br><br>
+        </form>
+        </div>
+        <div class="row-1">
+            <p onclick="customGoal1()">One</p>
+            <p onclick="customGoal2()">Two</p>
+            <p onclick="customGoal3()">Three</p>
+        </div>
+
+        <div class="navCont">
+            <img src="../assets/home.svg" onclick="location.href='homepage.html'">
+            <div class="newGoal" onclick="location.href='createNewGoal.html'">
+                <img src="../assets/addgoal.svg">
+            </div>
+            <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+        </div>
+    </div>
+</body>
+</html>
