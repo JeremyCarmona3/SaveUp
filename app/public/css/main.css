@@ -100,12 +100,20 @@ body {
     height: 50%;
     border-radius: 40px 40px 0px 0px;
     background-color: #357266;
+    color: white;
 }
 
 /* imgs */
 .logo {
+    background-color: #357266;
     padding: 30px;
     border-radius: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.logoBW {
+    background-color: white;
     width: 200px;
     height: 200px;
 }
@@ -208,7 +216,6 @@ body {
     }
     
     .col-2 {
-        text-align: left;
         width: 100%;
         height: auto;
     }
@@ -219,6 +226,10 @@ body {
         width: 100%;
         height: auto;
         justify-content: space-between;
+    }
+
+    .row-2 {
+        text-align: center;
     }
     
     .mobnone {
