@@ -7,37 +7,43 @@
     <title>Goal Overview</title>
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/testing.css">
+    <link rel="stylesheet" href="../css/overview.css">
 
     <script src="../javascript/index.js"></script>
 </head>
-<body>
-    <div class="text">
-
-        <div class=""> <!-- main goal visuals and inputs-->
+<body class="text">
+    <div class="overviewLayout">
+        <div class="goalVisuals "> <!-- main goal visuals and inputs-->
             <p class="bigText" id="currentGoalName">Designer Shoes</p>
 
-            <div class="">
-                <p class="heading" id="progressAmntOutOf">60.00/200.00</p>
-                <div class="line">----------------------------</div>
-                <div><img src="../assets/shoes.svg"></div>
+            <div class="aboutGoal">
+                <div>
+                    <p class="heading" id="progressAmntOutOf">60.00/200.00</p>
+                    <div class="line"></div>
+                </div>
+                <div class="goalIcon bigIcon"><img class="" src="../assets/shoes.svg"></div>
             </div>
 
-            <div>
+            <div class="pig">
                 <img class="" id="piggybank" src="../assets/piggy.svg">
             </div>
 
-            <div class="" id="progressBar"> =========PROGRESS BAR==========</div>
-            <div class="" id="progressInput"> =========User Input==========</div>
+            <div class="progress border">
+                <progress id="progressBar" value="60" max="200"></progress><br>
+            </div>
 
-            <div class="bigButton heading button"  id="withdrawBtn">withdraw</div>
-            <div class="bigButton heading button" id="saveupBtn">save up</div>
+            <input class="inputStyle bigText" id="progressInput" value="0.00"></input>
+
+            <div class="flexRow">
+                <div class="smallButton heading button"  id="withdrawBtn">withdraw</div>
+                <div class="smallButton heading button" id="saveupBtn">save up</div>
+            </div>
         </div>
 
         
-        <div class=""> <!-- goal info and history-->
-            <div class=""> <!-- goal info -->
-                <div class=""> 
+        <div class="goalRecords"> <!-- goal info and history-->
+            <div class="goalInfo"> <!-- goal info -->
+                <div class="infoLabel"> 
                     <div class="">
                         <p class="">Final Goal</p>
                         <p class="">Weekly Goal</p>
@@ -61,7 +67,7 @@
                 </div>
                 <div class="">
                     <p class="heading">Progress Graph</p>
-                    <div class="" id="">======== Progress Graph ========</div>
+                    <div class="" id="">======== Line Chart of Goal Progress ========</div>
                 </div>
             </div>
         </div>
