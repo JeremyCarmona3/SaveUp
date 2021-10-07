@@ -13,6 +13,31 @@
 </head>
 <body class="text">
     <div class="overviewLayout">
+
+
+        <!-- top navigation -->
+    
+        <!-- back button -->
+        <div class="backCont desknone" style="margin-left: 20px;">
+            <img src="../assets/back.svg">
+        </div>
+        
+        <!-- desktop top bar -->
+        <div class="topbar mobnone">
+            <div class="logoCont" style="margin-left: 20px;">
+                <img src="../assets/logobw.svg" style="width: 96px; height: 81px;">
+                <p class="bigText">SaveUp</p>
+            </div>
+            <div class="threeSections">
+                <p class="mobnone heading underline" onclick="location.href='homepage.html'">Home</p>
+                <p class="mobnone heading underline" onclick="location.href='collection.html'">Goals</p>
+                <div class="mobnone button smallButton heading" onclick="location.href='createNewGoal.html'">New Goal</div>
+                <img src="../assets/settings.svg" style="margin-right: 20px;">
+            </div>
+        </div>
+
+
+
         <div class="goalVisuals "> <!-- main goal visuals and inputs-->
             <p class="bigText" id="currentGoalName">Designer Shoes</p>
 
@@ -68,7 +93,7 @@
                 </div>
             </div>
 
-            <div class=""> <!-- goal history -->
+            <div class="historyCont"> <!-- goal history -->
                 <div class="listHistory">
                     <p class="heading">History</p>
                     <div class="" id=""></div>
@@ -79,6 +104,15 @@
                 </div>
             </div>
         </div>
+
+                <!-- navbar -->
+                <div class="navCont desknone">
+                    <img src="../assets/home.svg" onclick="location.href='homepage.html'">
+                    <div class="newGoal" onclick="location.href='createNewGoal.html'">
+                        <img src="../assets/addgoal.svg">
+                    </div>
+                    <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+                </div>
 
     </div>
 </body>
