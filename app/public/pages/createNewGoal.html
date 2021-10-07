@@ -4,27 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Create a New Goal</title>
 </head>
 <body>
     <div class="main">
-        <div>
-            <p>< back</p>
+        <div class="newGoalCont">
+            <!-- back button -->
+            <div class="backCont desknone" style="margin-left: 20px;">
+                <img src="../assets/back.svg">
+            </div>
+            
+            <!-- desktop top bar -->
+            <div class="topbar mobnone">
+                <div class="logoCont" style="margin-left: 20px;">
+                    <img src="../assets/logobw.svg" style="width: 96px; height: 81px;">
+                    <p class="bigText">SaveUp</p>
+                </div>
+                <div class="threeSections">
+                    <p class="mobnone heading underline" onclick="location.href='homepage.html'">Home</p>
+                    <p class="mobnone heading underline" onclick="location.href='collection.html'">Goals</p>
+                    <div class="mobnone button smallButton heading" onclick="location.href='createNewGoal.html'">New Goal</div>
+                    <img src="../assets/settings.svg" style="margin-right: 20px;">
+                </div>
+            </div>
+
+            <!-- goal options -->
+
+            <div></div>
         </div>
-        <div>
-            <p>needs</p>
-            <p>wants</p>
+            
+
+
+
+
+
+
+        <!-- navbar -->
+        <div class="navCont desknone">
+            <img src="../assets/home.svg" onclick="location.href='homepage.html'">
+            <div class="newGoal" onclick="location.href='createNewGoal.html'">
+                <img src="../assets/addgoal.svg">
+            </div>
+            <img src="../assets/collection.svg" onclick="location.href='collection.html'">
         </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>Next Step</div>
-        <div></div>
+
+        
+
+        
+
+
     </div>
 </body>
 </html>

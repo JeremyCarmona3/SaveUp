@@ -333,6 +333,15 @@ body {
     bottom: 10px;
 }
 
+.newGoalCont {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 
 
@@ -408,6 +417,12 @@ body {
     .newGoal > img{
         width: 25px;
         height:25px;
+    }
+
+    .newGoalCont {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 10px;
     }
     
 }
