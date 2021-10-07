@@ -48,13 +48,16 @@ function skipTutorial() {
 }
 
 function customGoal1() {
+    location.href = "customizingGoal1.html";
     console.log('viewing custom goal page one');
 }
 
 function customGoal2() {
+    location.href = "customizingGoal2.html";
     console.log('viewing custom goal page two');
 }
 
 function customGoal3() {
+    location.href = "customizingGoal3.html";
     console.log('viewing custom goal page three');
 }
