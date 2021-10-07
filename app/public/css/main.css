@@ -153,6 +153,21 @@ body {
     height: 80px;
 }
 
+.smallIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91C499;
+    border: 7px solid #275249;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.smallIcon > img {
+    width: 40px;
+    height: 40px;
+}
 
 .inputStyle {
     padding: 10px;
@@ -161,6 +176,22 @@ body {
     border: 1px solid #A4A4A4;
     outline: none;
     width: 200px;
+}
+
+.inputStyleTwo {
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    border: 1px solid #A4A4A4;
+    outline: none;
+    width: 300px;
+}
+
+.formStyle {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* mobile and tablet */
