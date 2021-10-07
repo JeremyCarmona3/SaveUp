@@ -46,3 +46,15 @@ function skipTutorial() {
     location.href = "openingScreen1.html";
     console.log('viewing opening screen');
 }
+
+function customGoal1() {
+    console.log('viewing custom goal page one');
+}
+
+function customGoal2() {
+    console.log('viewing custom goal page two');
+}
+
+function customGoal3() {
+    console.log('viewing custom goal page three');
+}
