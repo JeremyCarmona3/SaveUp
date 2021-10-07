@@ -159,6 +159,7 @@ body {
 
 
 
+
 /* upper part of home page */
 
 .responsiveContainerHome{
@@ -452,4 +453,10 @@ body {
         width: 416px;
     }
     
+    .logoCont {
+        width: 340px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
