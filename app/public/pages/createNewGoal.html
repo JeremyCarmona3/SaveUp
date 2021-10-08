@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <title>Create a New Goal</title>
+    <script src="../javascript/newgoal.js"></script>
 </head>
 <body>
     <div class="main">
         <div class="newGoalCont2">
             <!-- back button -->
             <div class="backCont desknone" style="margin-left: 20px;">
-                <img src="../assets/back.svg">
+                <img src="../assets/back.svg" onclick="location.href='homepage.html'">
             </div>
             
             <!-- desktop top bar -->
@@ -22,8 +23,8 @@
                     <p class="bigText">SaveUp</p>
                 </div>
                 <div class="threeSections">
-                    <p class="mobnone heading underline" onclick="location.href='homepage.html'">Home</p>
-                    <p class="mobnone heading underline" onclick="location.href='collection.html'">Goals</p>
+                    <p class="mobnone heading " onclick="location.href='homepage.html'">Home</p>
+                    <p class="mobnone heading  onclick="location.href='collection.html'">Goals</p>
                     <div class="mobnone button smallButton heading" onclick="location.href='createNewGoal.html'">New Goal</div>
                     <img src="../assets/settings.svg" style="margin-right: 20px;">
                 </div>
@@ -60,62 +61,62 @@
             <div class="needs-wants">
                 <!-- goal options -->
                 <div class="optionsCont">
-                    <div class="selectionCont desknone">
-                        <p class="heading" >Needs</p>
+                    <div class="selectionCont desknone" >
+                        <p class="heading" onclick="needs()" id="needs">Needs</p>
                         <img src="../assets/divider.svg">
-                        <p class="heading" >Wants</p>
+                        <p class="heading" onclick="wants()" id="wants" style="color:#A4A4A4;">Wants</p>
                     </div>
                     
                     <div class="allIcons">
                         
                         
                         <div class="iconCont">
-                            <div class="optionsIcon">
-                                <img src="../assets/groceries.svg">
+                            <div class="optionsIcon" id="square1">
+                                <img src="../assets/groceries.svg" id="img1">
                             </div>
-                            <p class="text">
+                            <p class="text" id="txt1">
                                 Groceries
                             </p>
                         </div>
                         
                         <div class="iconCont">
-                            <div class="optionsIcon">
-                                <img src="../assets/transportation.svg">
+                            <div class="optionsIcon" id="square2">
+                                <img src="../assets/transportation.svg" id="img2">
                             </div>
-                            <p class="text">
+                            <p class="text" id="txt2">
                                 Transportation
                             </p>
                         </div>
                         
                         <div class="iconCont">
-                            <div class="optionsIcon">
-                                <img src="../assets/medicine.svg">
+                            <div class="optionsIcon" id="square3">
+                                <img src="../assets/medicine.svg" id="img3">
                             </div>
-                            <p class="text">
+                            <p class="text" id="txt3">
                                 Medicine
                             </p>
                         </div>
                         
-                        <div class="iconCont">
-                            <div class="optionsIcon">
-                                <img src="../assets/supplies.svg">
+                        <div class="iconCont" >
+                            <div class="optionsIcon" id="square4">
+                                <img src="../assets/supplies.svg" id="img4">
                             </div>
-                            <p class="text">
+                            <p class="text" id="txt4">
                                 Supplies
                             </p>
                         </div>
                         
                         <div class="iconCont">
-                            <div class="optionsIcon">
-                                <img src="../assets/pizza.svg">
+                            <div class="optionsIcon" id="square5">
+                                <img src="../assets/pizza.svg" id="img5">
                             </div>
-                            <p class="text">
+                            <p class="text" id="txt5">
                                 Food
                             </p>
                         </div>
                         
                         <div class="iconCont">
-                            <div class="optionsIcon">
+                            <div class="optionsIcon" id="square6">
                                 <img src="../assets/custom.svg">
                             </div>
                             <p class="text">
