@@ -371,6 +371,18 @@ body {
     border-radius: 20px;
 }
 
+.optionsIconPink {
+    width: 133px;
+    height: 133px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA1A1;
+    border-radius: 20px;
+}
+
+
+
 
 .row-1 {
     display: flex;
@@ -406,10 +418,18 @@ body {
     margin-bottom: 10px;
 }
 
+
 .allIcons {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+}
+
+.needs-wants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -527,5 +547,9 @@ body {
         display:flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .optionsCont {
+        width: 507px;
     }
 }
