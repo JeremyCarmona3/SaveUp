@@ -1,6 +1,8 @@
-.calendar-box {
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&family=Varela+Round&display=swap');
 
-}
+/* .calendar-box {
+  
+} */
 
 .buttons-container {
   cursor: pointer;
@@ -14,19 +16,9 @@
   background: #efefef;
 }
 
-/* weekend */
-.week .day:first-child, .week .day:last-child {
-  color: orange;
-}
-
-/* sunday */
-.week .day:first-child {
-  color: red;
-}
-
 .day {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 14.28%;
   text-align: center;
   cursor: pointer;
@@ -60,11 +52,19 @@
 
 .months-wrapper .month {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 25%;
   text-align: center;
   cursor: pointer;
 }
 .months-wrapper .month.one-third {
   width: 33.33%;
+}
+
+/* text styles */
+.month-label, .year-label {
+  font-family: 'Varela Round';
+}
+.header, .next-button, .prev-button, .week {
+  font-family: 'Be Vietnam';
 }
