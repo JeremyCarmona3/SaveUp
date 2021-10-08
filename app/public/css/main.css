@@ -286,7 +286,7 @@ body {
 
 
 
-.collection {
+.goals {
     height: 400px;
     width: 100%;
     background-color: #FAFAFA;
@@ -299,7 +299,7 @@ body {
     border: 1px solid #A4A4A4;
 }
 
-.collectionMargin {
+.goalMargin {
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -342,18 +342,79 @@ body {
     align-items: center;
 }
 
-.optionsCont {
-    width: 294px;
-    height: 596px;
-    background-color: #275249;
-    align-self: center;
+.newGoalCont2 {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: -50px;
 }
 
 
+.optionsCont {
+    width: 294px;
+    height: 596px;
+    align-self: center;
+    position:relative;
+    
+}
+
+.optionsIcon {
+    width: 133px;
+    height: 133px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91C499;
+    border-radius: 20px;
+}
 
 
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-2 {
+    text-align: center;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.selectionCont {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconCont {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.allIcons {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
 
 /* mobile and tablet */
+
 @media only screen and (min-width: 320px) and (max-width: 1023px) { 
     /* layout */
     .col-1, col-2 {
@@ -370,25 +431,6 @@ body {
         height: 100%;
     }
 
-    .cardText {
-        display: flex;
-        flex-direction: column;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-    
-    .row-1 {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .row-2 {
-        text-align: center;
-    }
     
     .mobnone {
         display: none;
@@ -431,7 +473,12 @@ body {
         align-items: flex-start;
         margin-top: 10px;
     }
-    
+
+    .newGoalCont2 {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
 }
 
 /* laptop and desktop */
@@ -460,7 +507,7 @@ body {
         bottom: 50px;
     }
 
-    .collection {
+    .goals {
         height: 600px;
         width: 2500px;
         border-radius: 40px 0px 0px 0px;
