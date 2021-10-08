@@ -1,5 +1,5 @@
 function letsGo() {
-    location.href = "../public/pages/tutorial.html";
+    location.href = "./pages/tutorial.html";
     console.log('letsGo');
 }
 
