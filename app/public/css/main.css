@@ -560,4 +560,12 @@ body {
     .optionsCont {
         width: 507px;
     }
+
+    .responsiveGoal {
+        display: flex;
+    }
+
+    .goalNav, row-1 {
+        display: none;
+    }
 }

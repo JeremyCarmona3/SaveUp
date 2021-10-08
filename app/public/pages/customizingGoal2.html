@@ -18,28 +18,60 @@
 </head>
 <body>
     <div class="main">
-        <p class="bigText">Add New Goal</p>
-        <div class="smallIcon">
-            <img src="../assets/shoes.svg">
-        </div>
-        <br>
-        <div class="underline text">Change icon</div>
-        <br>
-
-        <div class="calendar-wrapper" id="calendar-wrapper"></div>
-        
-        <div class="row-1">
-            <span onclick="customGoal1()" class="dot">1</span>
-            <span onclick="customGoal2()" class="dot">2</span>
-            <span onclick="customGoal3()" class="dot">3</span>
-        </div>
-
-        <div class="navCont">
-            <img src="../assets/home.svg" onclick="location.href='homepage.html'">
-            <div class="newGoal" onclick="location.href='createNewGoal.html'">
-                <img src="../assets/addgoal.svg">
+        <!-- div to make it responsive with other screen sizes -->
+        <div class="responsiveGoal">  
+            <p class="bigText">Add New Goal</p>
+            <div class="smallIcon">
+                <img src="../assets/shoes.svg">
             </div>
-            <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+            <br>
+            <div class="underline text">Change icon</div>
+            <br>
+            <!-- custom goal page 1 -->
+            <div class="formStyle">
+            <form>
+                <label class="heading">Goal Name</label><br>
+                <input class="inputStyle" type="text"><br><br>
+                <label class="heading">How much would you like to save for this goal?</label><br>
+                <input class="inputStyle" type="text"><br><br>
+                <label class="heading">Category</label><br>
+                <input class="inputStyle" type="text"><br><br>
+            </form>
+            </div>
+    
+            <!-- customGoal page 2 -->
+            <div class="calendar-wrapper" id="calendar-wrapper"></div>
+    
+            <!-- customGoal page 3 -->
+            <div class="formStyle">
+                <form>
+                    <label class="heading">Reminders</label><br><br>
+                    <label class="heading">How often would you like to be reminded?</label><br>
+                    <input class="inputStyle" type="text"><br><br>
+                    <label class="heading">Email Address</label><br>
+                    <input class="inputStyle" type="text"><br>
+                    <label class="sameLoginText">
+                        <input type="checkbox" checked="checked">Same as login</input>
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                </form>
+            </div>
+            <br>
+    
+            <div class="row-1">
+                <span onclick="customGoal1()" class="dot">1</span>
+                <span onclick="customGoal2()" class="dot">2</span>
+                <span onclick="customGoal3()" class="dot">3</span>
+            </div>
+    
+            <div class="navCont">
+                <img src="../assets/home.svg" onclick="location.href='homepage.html'">
+                <div class="newGoal" onclick="location.href='createNewGoal.html'">
+                    <img src="../assets/addgoal.svg">
+                </div>
+                <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+            </div>
         </div>
     </div>
     

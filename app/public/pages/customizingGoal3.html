@@ -7,48 +7,99 @@
     <title>Customize My Goal</title>
 
     <link rel="stylesheet" href="../css/main.css">
-    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
     <script src="../javascript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="calendar.min.js"></script> -->
+    <script src="../javascript/calendar.js"></script>
 
 </head>
 <body>
     <div class="main">
-        <p class="bigText">Add New Goal</p>
-        <div class="smallIcon">
-            <img src="../assets/shoes.svg">
-        </div>
-        <br>
-        <div class="underline text">Change icon</div>
-        <br>
-        <div class="formStyle">
-            <form>
-                <label class="heading">Reminders</label><br><br>
-                <label class="heading">How often would you like to be reminded?</label><br>
-                <input class="inputStyle" type="text"><br><br>
-                <label class="heading">Email Address</label><br>
-                <input class="inputStyle" type="text"><br>
-                <label class="sameLoginText">
-                    <input type="checkbox" checked="checked">Same as login</input>
-                    <span class="checkmark"></span>
-                </label>
-                
-            </form>
+        <!-- div to make it responsive with other screen sizes -->
+        <div class="responsiveGoal">
+            <div class="goalNav">
+                <div class="smallIcon">
+                    <img src="../assets/shoes.svg">
+                </div>
+                <br>
+                <div class="underline text">Change icon</div>
+                <p class="bigText">Add New Goal</p>
             </div>
             <br>
-            
-        <div class="row-1">
-            <span onclick="customGoal1()" class="dot">1</span>
-            <span onclick="customGoal2()" class="dot">2</span>
-            <span onclick="customGoal3()" class="dot">3</span>
-        </div>
-
-        <div class="navCont">
-            <img src="../assets/home.svg" onclick="location.href='homepage.html'">
-            <div class="newGoal" onclick="location.href='createNewGoal.html'">
-                <img src="../assets/addgoal.svg">
+            <!-- custom goal page 1 -->
+            <div class="formStyle">
+            <form>
+                <label class="heading">Goal Name</label><br>
+                <input class="inputStyle" type="text"><br><br>
+                <label class="heading">How much would you like to save for this goal?</label><br>
+                <input class="inputStyle" type="text"><br><br>
+                <label class="heading">Category</label><br>
+                <input class="inputStyle" type="text"><br><br>
+            </form>
             </div>
-            <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+    
+            <!-- customGoal page 2 -->
+            <div class="calendar-wrapper" id="calendar-wrapper"></div>
+    
+            <!-- customGoal page 3 -->
+            <div class="formStyle">
+                <form>
+                    <label class="heading">Reminders</label><br><br>
+                    <label class="heading">How often would you like to be reminded?</label><br>
+                    <input class="inputStyle" type="text"><br><br>
+                    <label class="heading">Email Address</label><br>
+                    <input class="inputStyle" type="text"><br>
+                    <label class="sameLoginText">
+                        <input type="checkbox" checked="checked">Same as login</input>
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                </form>
+            </div>
+            <br>
+    
+            <div class="row-1">
+                <span onclick="customGoal1()" class="dot">1</span>
+                <span onclick="customGoal2()" class="dot">2</span>
+                <span onclick="customGoal3()" class="dot">3</span>
+            </div>
+    
+            <div class="navCont">
+                <img src="../assets/home.svg" onclick="location.href='homepage.html'">
+                <div class="newGoal" onclick="location.href='createNewGoal.html'">
+                    <img src="../assets/addgoal.svg">
+                </div>
+                <img src="../assets/collection.svg" onclick="location.href='collection.html'">
+            </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        var config = `
+        function selectDate(date) {
+            $('#calendar-wrapper').updateCalendarOptions({
+            date: date
+            });
+            console.log(calendar.getSelectedDate());
+        }
+        
+        var defaultConfig = {
+            weekDayLength: 1,
+            date: '',
+            onClickDate: selectDate,
+            showYearDropdown: true,
+            startOnMonday: false,
+        };
+        
+        var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+        console.log(calendar.getSelectedDate());
+        `;
+
+        eval(config);
+    </script>
+
 </body>
 </html>
