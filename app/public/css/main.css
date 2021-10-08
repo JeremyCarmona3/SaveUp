@@ -441,6 +441,25 @@ body {
     width: 100%;
 }
 
+.needs-wants-headings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.needs-wants-align {
+    display: flex;
+    justify-content: space-around;
+}
+
+.needs-wants-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width:507px;
+    margin-bottom: 20px;
+}
+
 /* mobile and tablet */
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) { 
@@ -559,5 +578,10 @@ body {
 
     .optionsCont {
         width: 507px;
+    }
+
+    .needs-wants-headings {
+        position: relative;
+        top:100px;
     }
 }
