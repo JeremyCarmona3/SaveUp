@@ -142,6 +142,8 @@ body {
     display: inline-block;
     text-align: center;
     background-color: #91C499;
+    color: white;
+    font-family: 'Varela Round';
 }
 
 /* global layouts */

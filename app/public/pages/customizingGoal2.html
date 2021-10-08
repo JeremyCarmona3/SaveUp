@@ -7,8 +7,13 @@
     <title>Customize My Goal</title>
 
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
 
     <script src="../javascript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="calendar.min.js"></script> -->
+    <script src="../javascript/calendar.js"></script>
 
 </head>
 <body>
@@ -21,10 +26,12 @@
         <div class="underline text">Change icon</div>
         <br>
 
+        <div class="calendar-wrapper" id="calendar-wrapper"></div>
+        
         <div class="row-1">
-            <p onclick="customGoal1()">One</p>
-            <p onclick="customGoal2()">Two</p>
-            <p onclick="customGoal3()">Three</p>
+            <span onclick="customGoal1()" class="dot">1</span>
+            <span onclick="customGoal2()" class="dot">2</span>
+            <span onclick="customGoal3()" class="dot">3</span>
         </div>
 
         <div class="navCont">
@@ -35,5 +42,30 @@
             <img src="../assets/collection.svg" onclick="location.href='collection.html'">
         </div>
     </div>
+    
+    <script type="text/javascript">
+        var config = `
+        function selectDate(date) {
+            $('#calendar-wrapper').updateCalendarOptions({
+            date: date
+            });
+            console.log(calendar.getSelectedDate());
+        }
+        
+        var defaultConfig = {
+            weekDayLength: 1,
+            date: '',
+            onClickDate: selectDate,
+            showYearDropdown: true,
+            startOnMonday: false,
+        };
+        
+        var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+        console.log(calendar.getSelectedDate());
+        `;
+
+        eval(config);
+    </script>
+
 </body>
 </html>
